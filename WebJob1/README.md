@@ -8,8 +8,8 @@ This is a repository created in order to reproduce a bug in which Continuous Azu
 3. Create an Azure storage account (v2, using the new portal)
 4. Create an Azure web app (under app services) with an S1 app service plan
 5. Under your web app settings > Application settings, set Always On, and create two App Settings
-  a. AzureWebJobsDashboard
-  b. AzureWebJobsDashboard
+  * AzureWebJobsDashboard
+  * AzureWebJobsStorage
 6. Find the connection string for your storage account, and enter it as the value for both of these App Settings
 7. Right-click on the WebJob1 project file in Visual Studio (Solution Explorer window) and select Publish as Azure WebJob
 8. Go through the steps to publish to the existing web app you just created
